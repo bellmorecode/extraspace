@@ -17,10 +17,9 @@ namespace ExtraspaceApp.Areas.m
             context.MapRoute(
                 "m_default",
                 "m/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional },
+                new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                 new[] { "ExtraspaceApp.Areas.m.Controllers" }
             );
-
         }
     }
 }
