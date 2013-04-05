@@ -365,12 +365,12 @@
                 return;
             }
 
-            if (enteredEmail.indexOf("@") <= 0) {
+            if (enteredEmail.indexOf("@@") <= 0) {
                 SetEmailError("Please enter a valid e-mail address.");
                 return;
             }
 
-            var enteredDomain = enteredEmail.split("@")[1].toLowerCase();
+            var enteredDomain = enteredEmail.split("@@")[1].toLowerCase();
             for (var i in identityProviders) {
                 for (var j in identityProviders[i].EmailAddressSuffixes) {
                     if (enteredDomain == identityProviders[i].EmailAddressSuffixes[j].toLowerCase()) {
