@@ -21,9 +21,7 @@ namespace ExtraspaceApp.Controllers
             }
 
 
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
-
-            // return RedirectToAction("Index", "Home", new { area = "m" });
+            
             return View();
         }
 
