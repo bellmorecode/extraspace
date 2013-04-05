@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Auth10.AspNet</id>
+    <version>0.9.3</version>
+    <title>Configure an ASP.NET WebSite with Windows Identity Foundation</title>
+    <authors>Matias Woloski</authors>
+    <owners>Matias Woloski</owners>
+    <projectUrl>http://auth10.com/</projectUrl>
+    <iconUrl>http://blog.auth10.com/assets/themes/the-program/skin/a10favicon.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A package that configures federated identity in an ASP.NET website using Windows Identity Foundation in the least amount of steps</description>
+    <summary>A package that configures federated identity in an ASP.NET website using Windows Identity Foundation in the least amount of steps</summary>
+    <releaseNotes />
+    <copyright />
+    <language />
+    <tags>wif asp.net mvc claims acs azure auth10</tags>
+    <dependencies>
+      <dependency id="Microsoft.IdentityModel" />
+    </dependencies>
+    <references />
+  </metadata>
+</package>
