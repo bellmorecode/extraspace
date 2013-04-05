@@ -3,18 +3,21 @@
 @{
     ViewBag.Title = "Login";
 }
+
+@section Header {
+        
+}
+
 <style type="text/css">
     body
     {
         font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
+        
     }
 
     div.SignInContent
     {
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
         border: solid 1px #BBBBBB;
         position: relative;
         width: 340px;
@@ -23,11 +26,9 @@
 
     div.Banner
     {
+        text-align: center;
         padding-top:10px;
         padding-bottom:10px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
         background: #EEEEEE;
         border-top: solid 1px #BBBBBB;
         border-left: solid 1px #BBBBBB;
@@ -46,7 +47,6 @@
 
     div.LeftArea
     {
-        padding:15px 15px;
         width: 320px; 
         height: 100%;
         position: absolute;
@@ -56,7 +56,7 @@
 
     div.RightArea
     {
-        padding:15px 15px; 
+        
         width: 320px; 
         height: 100%;
         position: absolute;
@@ -412,6 +412,4 @@
     <!-- This script gets the HRD metadata in JSON and calls the callback function which renders the links -->
     <script src="https://extraspace.accesscontrol.windows.net/v2/metadata/IdentityProviders.js?protocol=wsfederation&amp;realm=http%3a%2f%2fextraspace.apphb.com%2f&amp;reply_to=&amp;context=&amp;request_id=&amp;version=1.0&amp;callback=ShowSigninPage" type="text/javascript"></script>
             <br />
-            <div class="footer">
-                <a id="HyperLink1" href='http://go.microsoft.com/fwlink/?LinkID=131004' target="_blank">Privacy</a>
-            </div>
+            
