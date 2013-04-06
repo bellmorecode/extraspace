@@ -34,3 +34,5 @@ C:\Users\Glenn\GitHub\extraspace\ExtraspaceApp\ExtraspaceApp\bin\System.Web.WebP
 C:\Users\Glenn\GitHub\extraspace\ExtraspaceApp\ExtraspaceApp\obj\Debug\ExtraspaceApp.csprojResolveAssemblyReference.cache
 C:\Users\Glenn\GitHub\extraspace\ExtraspaceApp\ExtraspaceApp\obj\Debug\ExtraspaceApp.dll
 C:\Users\Glenn\GitHub\extraspace\ExtraspaceApp\ExtraspaceApp\obj\Debug\ExtraspaceApp.pdb
+C:\Users\Glenn\GitHub\extraspace\ExtraspaceApp\ExtraspaceApp\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Glenn\GitHub\extraspace\ExtraspaceApp\ExtraspaceApp\bin\Microsoft.AspNet.SignalR.Core.xml
