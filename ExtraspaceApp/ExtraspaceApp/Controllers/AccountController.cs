@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
 using ExtraspaceApp.Models;
+using Microsoft.IdentityModel.Configuration;
 
 namespace ExtraspaceApp.Controllers
 {
@@ -21,12 +23,21 @@ namespace ExtraspaceApp.Controllers
             return View();
         }
 
+        Func<string> GetRealmUrl = () =>
+        {
+            var section = ConfigurationManager.GetSection("microsoft.identityModel") as MicrosoftIdentityModelSection;
+            var svc = section.ServiceElements.Cast<ServiceElement>().First() as ServiceElement;
+            return svc.FederatedAuthentication.WSFederation.Realm;
+        };
+
         //
         // GET: /Account/Login
 
         [AllowAnonymous]
         public ActionResult Login()
         {
+            var model = new LoginModel();
+            model.RealmUrl = this.GetRealmUrl();
             return View();
         }
 

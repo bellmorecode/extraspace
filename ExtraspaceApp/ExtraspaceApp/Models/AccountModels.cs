@@ -40,6 +40,8 @@ namespace ExtraspaceApp.Models
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
+
+        public string RealmUrl { get; set; }
     }
 
     public class RegisterModel
